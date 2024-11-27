@@ -1,0 +1,1 @@
+select * from {{ source('wikipedia','recent_changes') }}

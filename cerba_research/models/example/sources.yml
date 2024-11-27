@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: wikipedia
+    description: "Raw data from the destination PostgreSQL database."
+    database: wikipedia
+    schema: public
+    tables:
+      - name: page
+        description: "List of films."
+      - name: recent_changes
+        description: "List of actors."

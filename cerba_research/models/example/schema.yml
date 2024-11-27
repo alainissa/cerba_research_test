@@ -1,0 +1,56 @@
+
+version: 2
+
+models:
+  - name: cleaned_page
+    description: "A starter dbt model"
+    columns:
+      - name: pageid
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: ns
+        description: ""
+
+      - name: title
+        description: ""
+
+      - name: touched
+        description: ""
+
+      - name: pagelanguage
+        description: ""
+
+      - name: contentmodel
+        description: ""
+
+      - name: pagelanguagehtmlcode
+        description: ""
+
+      - name: lastrevid
+        description: ""
+
+      - name: length
+        description: ""
+
+  - name: cleaned_recent_changes
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: page_id
+        description: ""
+
+      - name: title
+        description: ""
+
+      - name: timestamp
+        description: ""
+
+      - name: user
+        description: ""
